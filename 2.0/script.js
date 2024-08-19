@@ -1,0 +1,1 @@
+// Plan for javascript is turn the website to dark mode
