@@ -48,6 +48,8 @@ body {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
   .socials
@@ -80,3 +82,62 @@ body {
 {
   transform: scale(1.2);
 }
+
+.hide
+{
+  opacity: 0;
+  transition: all 1s;
+}
+
+.show
+{
+  opacity: 1;
+}
+
+@media only screen and (max-width: 480px) 
+{
+  header nav ul 
+  {
+    flex-direction: column;
+  }
+  header nav li 
+  {
+    margin-right: 0;
+  }
+  main 
+  {
+    flex-direction: column;
+  }
+  section 
+  {
+    flex-basis: 100%;
+    margin: 10px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) 
+{
+  main 
+  {
+    flex-direction: row;
+  }
+  section 
+  {
+    flex-basis: 45%;
+    margin: 20px;
+  }
+}
+
+@media only screen and (min-width: 769px) 
+{
+  main 
+  {
+    flex-direction: row;
+  }
+  section
+  {
+    flex-basis: 30%;
+    margin: 20px;
+  }
+}
+

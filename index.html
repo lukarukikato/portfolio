@@ -10,12 +10,14 @@
   </title>
   <link rel = "stylesheet" 
   href = "styles.css">
+  <script defer src = "script.js">
+  </script>
 </head>
 
 <body>
 
   <header> 
-    <section id = "header">
+    <section class= hide id = "header">
       <div class= "container">
         <h1 style = "font-size: 48px;">
           FAV FAV FAV FAV FAV FAV FAV FAV
@@ -23,7 +25,8 @@
       </div>
     </section>
   </header>
-  <section id = "body">
+
+  <section class = hide id = "body">
     <div class = "container">
       <img src = "../assets/pfp.jpg"
       class = "profile-picture">
@@ -36,7 +39,7 @@
     </div>
   </section>
 
-  <section id = "about" >
+  <section class = hide id = "about" >
     <div class = "container" >
       <h1>
         About Me
@@ -49,7 +52,7 @@
     </div>
   </section>
 
-  <section id = "experience">
+  <section class = hide id = "experience">
     <div class = "container">
       <h1>
         Experience
@@ -61,7 +64,7 @@
   </section>
 
   <footer>
-    <div class = "container">
+    <div class = "container hide">
       <ul class = "socials">
         <li> <a href = "https://github.com/lukarukikato" target = "_blank"> <img src = "../assets/github.png" class = "hover-image"> </a> </li>
         <li> <a href = "https://www.instagram.com/favianrevaldy/" target = "_blank"> <img src = "../assets/instagram.png" class = "hover-image"> </a> </li>
@@ -73,7 +76,5 @@
   </div>
   </footer>
 
-  <script src = "script.js">
-  </script>
 </body>
 </html>
